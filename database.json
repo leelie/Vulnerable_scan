@@ -88,7 +88,19 @@
 			"id":"15",
 			"type":"elasticsearch",
 			"path":":9200/_river/_search",
-			"text":"_river"                  
-		}
+			"text":"_river"     
+		},
+	        {
+                         "id":"16",
+                         "type":"mongodb",
+                         "path":":27017/test/",
+                         "text":"You are trying to access MongoDB"    
+                },
+                {
+                         "id":"17",
+                         "type":"mongodb",
+                         "path":":28017/test/",
+                         "text":":REST is not enabled"
+                }
 		]
 }
