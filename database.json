@@ -101,6 +101,11 @@
                          "type":"mongodb",
                          "path":":28017/test/",
                          "text":":REST is not enabled"
+                },
+                {        "id":"18",
+                         "type":"webserver",
+                         "path":"/../../../../../../../../../../../../../../etc/passwd"
+                         "text":"root:x:0:0:"
                 }
 		]
 }
