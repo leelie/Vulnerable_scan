@@ -14,98 +14,140 @@
 		},
 		{
 			"id":"3",
+			"type":"build.sh",
+			"path":"/build.sh",
+			"text":"#! /bin/sh"
+		},
+		{
+			"id":"4",
 			"type":"test-cgi",
 			"path":"/cgi-bin/test-cgi",
 			"text":"SERVER_SOFTWARE"
 		},
 		{
-			"id":"4",
+			"id":"5",
 			"type":"crossdomain.xml",
 			"path":"/crossdomain.xml",
 			"text":"allow-access-from domain=\"*\""
 		},
+		{
+			"id":"6",
+			"type":"DS_Store",
+			"path":"/.DS_Store",
+			"text":"Bud"
+		},
 		{	
-			"id":"5",
+			"id":"7",
 			"type":"examples/jsp",
 			"path":"/examples/jsp/",
 			"text":"Examples"
 		},
 		{
-			"id":"6",
+			"id":"8",
+			"type":"git",
+			"path":"/.git/config",
+			"text":"repositoryformatversion"
+		},
+		{
+			"id":"9",
+			"type":"hatccess",
+			"path":"/.htaccess",
+			"text":"RewriteEngine"
+		},
+		{
+			"id":"10",
 			"type":"pcheck",
 			"path":"/pcheck/index.php",
 			"text":"Welcome Pcheck!"
 		},
 		{
-			"id":"7",
+			"id":"11",
 			"type":"phpmyadmin/ChangeLog",
 			"path":"/phpmyadmin/ChangeLog",
 			"text":"phpMyAdmin - ChangeLog"
 		},
+		{	
+			"id":"12",
+			"type":"SimpleHTTPServerWithUpload.py",
+			"path":"/SimpleHTTPServerWithUpload.py",
+			"text":"SimpleHTTPRequestHandler"
+		},
 		{
-			"id":"8",
+			"id":"13",
+			"type":"svn",
+			"path":"/.svn/entries",
+			"text":"dir\n"
+		},
+		{
+			"id":"14",
 			"type":"phpinfo",
 			"path":"/test.php",
 			"text":"phpinfo()"
 		},
 		{
-			"id":"9",
+			"id":"15",
 			"type":"phpinfo",
 			"path":"/info.php",
 			"text":"phpinfo()"
 		},
 		{
-			"id":"10",
+			"id":"16",
 			"type":"phpinfo",
 			"path":"/phpinfo.php",
 			"text":"phpinfo()"
 		},
 		{
-			"id":"11",
+			"id":"17",
 			"type":"phpinfo",
 			"path":"/a.php",
 			"text":"phpinfo()"
 		},
 		{	
-			"id":"12",
+			"id":"18",
 			"type":"phpinfo",
 			"path":"/aaa.php",
 			"text":"phpinfo()"
 		},
 		{
-			"id":"13",
+			"id":"19",
 			"type":"phpinfo",
-			"path":"/phptest.php",
+			"path":"/1.php",
 			"text":"phpinfo()"
 		},
 		{
-			"id":"14",
+			"id":"20",
+			"type":"deploy.sh",
+			"path":"/mkt-web/deploy.sh",
+			"text":"#!/bin/bash"
+		},
+		{
+			"id":"21",
 			"type":"elasticsearch",
 			"path":":9200/_cat/indices",
 			"text":"_river"
 		},
 		{
-			"id":"15",
+			"id":"22",
 			"type":"elasticsearch",
 			"path":":9200/_river/_search",
-			"text":"_river"     
+			"text":"_river"                  
 		},
-	        {
-                         "id":"16",
-                         "type":"mongodb",
-                         "path":":27017/test/",
-                         "text":"You are trying to access MongoDB"    
-                },
-                {
-                         "id":"17",
-                         "type":"mongodb",
-                         "path":":28017/test/",
-                         "text":":REST is not enabled"
-                },
-                {        "id":"18",
-                         "type":"webserver",
-                         "path":"/../../../../../../../../../../../../../../etc/passwd",
-                         "text":"root:x:0:0:"
+		{
+             "id":"23",
+             "type":"mongodb",
+             "path":":27017/test/",
+             "text":"You are trying to access MongoDB"    
+    	},
+    	{
+             "id":"24",
+             "type":"mongodb",
+             "path":":28017/test/",
+             "text":":REST is not enabled"
+    	},
+        {    "id":"25",
+             "type":"webserver",
+             "path":"/../../../../../../../../../../../../../../etc/passwd",
+             "text":"root:x:0:0:"
                 }
-		]
+			]
 }
