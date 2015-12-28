@@ -149,8 +149,8 @@
                         "type":"webserver",
                         "path":"/../../../../../../../../../../../../../../etc/passwd",
                         "text":"root:x:0:0:"
-                }，
-                                {    
+                },
+                {    
         	        "id":"26",
                         "type":"webserver",
                         "path":"/etc/hosts",
