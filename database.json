@@ -133,21 +133,28 @@
 			"text":"_river"                  
 		},
 		{
-             "id":"23",
-             "type":"mongodb",
-             "path":":27017/test/",
-             "text":"You are trying to access MongoDB"    
-    	},
-    	{
-             "id":"24",
-             "type":"mongodb",
-             "path":":28017/test/",
-             "text":":REST is not enabled"
-    	},
-        {    "id":"25",
-             "type":"webserver",
-             "path":"/../../../../../../../../../../../../../../etc/passwd",
-             "text":"root:x:0:0:"
+                        "id":"23",
+                        "type":"mongodb",
+                        "path":":27017/test/",
+                        "text":"You are trying to access MongoDB"    
+    	        },
+    	        {
+                        "id":"24",
+                        "type":"mongodb",
+                        "path":":28017/test/",
+                        "text":":REST is not enabled"
+    	        },
+                {    
+        	        "id":"25",
+                        "type":"webserver",
+                        "path":"/../../../../../../../../../../../../../../etc/passwd",
+                        "text":"root:x:0:0:"
+                }，
+                                {    
+        	        "id":"26",
+                        "type":"webserver",
+                        "path":"/etc/hosts",
+                        "text":"127.0.0.1"
                 }
 			]
 }
