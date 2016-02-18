@@ -173,6 +173,12 @@
                         "type":"webserver",
                         "path":"/",
                         "text":"<title>Index of /</title>"	
+                },
+                 {
+                        "id":"30",
+                        "type":"webserver",
+                        "path":"/",
+                        "text":"<title>Directory Listing For /</title>"	
                 }
                 
 			]
