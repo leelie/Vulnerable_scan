@@ -185,7 +185,12 @@
                         "type":"webserver",
                         "path":"/",
                         "text":"BDUSS"	
+                },
+                {
+                        "id":"32",
+                        "type":"xss",
+                        "path":"/'><img scr=x onerror=alert(/4f589f4867dbd57e/)>",
+                        "text":"4f589f4867dbd57e"	
                 }
-                
 			]
 }
