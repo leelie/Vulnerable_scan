@@ -27,7 +27,7 @@ class Burst(threading.Thread):
 
     def _burst_start(self, url, text, mold, result_dic):
         try:
-            r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=allow_redirects)
+            r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=allow_redirects, verify=False)
             if r.status_code == requests.codes.ok:
                 if text in r.content:
                     print url
