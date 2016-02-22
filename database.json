@@ -191,6 +191,18 @@
                         "type":"xss",
                         "path":"/'><img scr=x onerror=alert(/4f589f4867dbd57e/)>",
                         "text":"4f589f4867dbd57e"	
+                },
+                {
+                        "id":"33",
+                        "type":"solr",
+                        "path":":8983/solr/#/",
+                        "text":"Solr Admin"	
+                },       
+		{
+                        "id":"34",
+                        "type":"solr",
+                        "path":":8983/",
+                        "text":"Solr Admin"	
                 }
-			]
+                ]
 }
