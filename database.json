@@ -233,6 +233,6 @@
                         "type":"hadoop",
                         "path":":50070/dfshealth.jsp",
                         "text":"node"	
-                },
+                }
                 ]
 }
