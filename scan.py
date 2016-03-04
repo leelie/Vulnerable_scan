@@ -135,12 +135,11 @@ if __name__ == '__main__':
             t.start()
         domain.join()
         save_result(result_dic, rules)
-
-    elif len(args[0]) > 1:
-        print args[0]
-        url_length = 1
-        t = Burst(domain.put(args[0]))
-        t.start()
-
     else:
-        parser.print_help()
+        try:
+            print args[0]
+            url_length = 1
+            t = Burst(domain.put(args[0]))
+            t.start()
+        except:
+            parser.print_help()
