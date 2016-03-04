@@ -158,13 +158,13 @@
                 },
                 {
                          "id":"27",
-                        "type":"webserver",
-                        "path":"/dfshealth.html#tab-overview",
+                        "type":"hadoop",
+                        "path":"/dfshealth.html",
                         "text":"Datanode Information"	
                 },
                 {
                         "id":"28",
-                        "type":"webserver",
+                        "type":"hadoop",
                         "path":"/conf",
                         "text":"<property>"	
                 },
@@ -189,8 +189,8 @@
                 {
                         "id":"32",
                         "type":"xss",
-                        "path":"/'><img scr=x onerror=alert(/4f589f4867dbd57e/)>",
-                        "text":"4f589f4867dbd57e"	
+                        "path":"/'><img scr=x onerror=alert(/a/)>",
+                        "text":"<img scr=x onerror=alert(/a/)>"	
                 },
                 {
                         "id":"33",
@@ -203,6 +203,36 @@
                         "type":"solr",
                         "path":":8983/",
                         "text":"Solr Admin"	
-                }
+                },
+                {
+                        "id":"35",
+                        "type":"hadoop",
+                        "path":":8983/",
+                        "text":"Solr Admin"	
+                },
+                {
+                        "id":"36",
+                        "type":"hadoop",
+                        "path":"/dfshealth.html",
+                        "text":"hadoop"	
+                },
+                {
+                        "id":"37",
+                        "type":"hadoop",
+                        "path":":50070/dfshealth.html",
+                        "text":"hadoop"	
+                },
+                {
+                        "id":"38",
+                        "type":"hadoop",
+                        "path":":50070/dfshealth.jsp",
+                        "text":"hadoop"	
+                },
+                {
+                        "id":"38",
+                        "type":"hadoop",
+                        "path":":50070/dfshealth.jsp",
+                        "text":"node"	
+                },
                 ]
 }
