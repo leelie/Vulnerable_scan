@@ -1,137 +1,137 @@
 {
-	"json": [
-		{
-			"id":"1",
-			"type":"bashrc",
-			"path":"/.bashrc",
-			"text":"Source global definitions"
-		},
-		{
-			"id":"2",
-			"type":"bash_history",
-			"path":"/.bash_history",
-			"text":"cd..\n"
-		},
-		{
-			"id":"3",
-			"type":"build.sh",
-			"path":"/build.sh",
-			"text":"#! /bin/sh"
-		},
-		{
-			"id":"4",
-			"type":"test-cgi",
-			"path":"/cgi-bin/test-cgi",
-			"text":"SERVER_SOFTWARE"
-		},
-		{
-			"id":"5",
-			"type":"crossdomain.xml",
-			"path":"/crossdomain.xml",
-			"text":"allow-access-from domain=\"*\""
-		},
-		{
-			"id":"6",
-			"type":"DS_Store",
-			"path":"/.DS_Store",
-			"text":"Bud"
-		},
-		{	
-			"id":"7",
-			"type":"examples/jsp",
-			"path":"/examples/jsp/",
-			"text":"Examples"
-		},
-		{
-			"id":"8",
-			"type":"git",
-			"path":"/.git/config",
-			"text":"repositoryformatversion"
-		},
-		{
-			"id":"9",
-			"type":"hatccess",
-			"path":"/.htaccess",
-			"text":"RewriteEngine"
-		},
-		{
-			"id":"10",
-			"type":"pcheck",
-			"path":"/pcheck/index.php",
-			"text":"Welcome Pcheck!"
-		},
-		{
-			"id":"11",
-			"type":"phpmyadmin/ChangeLog",
-			"path":"/phpmyadmin/ChangeLog",
-			"text":"phpMyAdmin - ChangeLog"
-		},
-		{	
-			"id":"12",
-			"type":"SimpleHTTPServerWithUpload.py",
-			"path":"/SimpleHTTPServerWithUpload.py",
-			"text":"SimpleHTTPRequestHandler"
-		},
-		{
-			"id":"13",
-			"type":"svn",
-			"path":"/.svn/entries",
-			"text":"dir\n"
-		},
-		{
-			"id":"14",
-			"type":"phpinfo",
-			"path":"/test.php",
-			"text":"phpinfo()"
-		},
-		{
-			"id":"15",
-			"type":"phpinfo",
-			"path":"/info.php",
-			"text":"phpinfo()"
-		},
-		{
-			"id":"16",
-			"type":"phpinfo",
-			"path":"/phpinfo.php",
-			"text":"phpinfo()"
-		},
-		{
-			"id":"17",
-			"type":"phpinfo",
-			"path":"/a.php",
-			"text":"phpinfo()"
-		},
-		{	
-			"id":"18",
-			"type":"phpinfo",
-			"path":"/aaa.php",
-			"text":"phpinfo()"
-		},
-		{
-			"id":"19",
-			"type":"phpinfo",
-			"path":"/1.php",
-			"text":"phpinfo()"
-		},
-		{
-			"id":"20",
-			"type":"deploy.sh",
-			"path":"/mkt-web/deploy.sh",
-			"text":"#!/bin/bash"
-		},
-		{
-			"id":"21",
-			"type":"elasticsearch",
-			"path":":9200/_cat/indices",
-			"text":"_river"
-		},
-		{
-			"id":"22",
-			"type":"elasticsearch",
-			"path":":9200/_river/_search",
-			"text":"_river"                  
-		},
+    "json": [
+        {
+            "id":"1",
+            "type":"bashrc",
+            "path":"/.bashrc",
+            "text":"Source global definitions"
+        },
+        {
+            "id":"2",
+            "type":"bash_history",
+            "path":"/.bash_history",
+            "text":"cd..\n"
+        },
+        {
+            "id":"3",
+            "type":"build.sh",
+            "path":"/build.sh",
+            "text":"#! /bin/sh"
+        },
+        {
+            "id":"4",
+            "type":"test-cgi",
+            "path":"/cgi-bin/test-cgi",
+            "text":"SERVER_SOFTWARE"
+        },
+        {
+            "id":"5",
+            "type":"crossdomain.xml",
+            "path":"/crossdomain.xml",
+            "text":"allow-access-from domain=\"*\""
+        },
+        {
+            "id":"6",
+            "type":"DS_Store",
+            "path":"/.DS_Store",
+            "text":"Bud"
+        },
+        {   
+            "id":"7",
+            "type":"examples/jsp",
+            "path":"/examples/jsp/",
+            "text":"Examples"
+        },
+        {
+            "id":"8",
+            "type":"git",
+            "path":"/.git/config",
+            "text":"repositoryformatversion"
+        },
+        {
+            "id":"9",
+            "type":"hatccess",
+            "path":"/.htaccess",
+            "text":"RewriteEngine"
+        },
+        {
+            "id":"10",
+            "type":"pcheck",
+            "path":"/pcheck/index.php",
+            "text":"Welcome Pcheck!"
+        },
+        {
+            "id":"11",
+            "type":"phpmyadmin/ChangeLog",
+            "path":"/phpmyadmin/ChangeLog",
+            "text":"phpMyAdmin - ChangeLog"
+        },
+        {   
+            "id":"12",
+            "type":"SimpleHTTPServerWithUpload.py",
+            "path":"/SimpleHTTPServerWithUpload.py",
+            "text":"SimpleHTTPRequestHandler"
+        },
+        {
+            "id":"13",
+            "type":"svn",
+            "path":"/.svn/entries",
+            "text":"dir\n"
+        },
+        {
+            "id":"14",
+            "type":"phpinfo",
+            "path":"/test.php",
+            "text":"phpinfo()"
+        },
+        {
+            "id":"15",
+            "type":"phpinfo",
+            "path":"/info.php",
+            "text":"phpinfo()"
+        },
+        {
+            "id":"16",
+            "type":"phpinfo",
+            "path":"/phpinfo.php",
+            "text":"phpinfo()"
+        },
+        {
+            "id":"17",
+            "type":"phpinfo",
+            "path":"/a.php",
+            "text":"phpinfo()"
+        },
+        {   
+            "id":"18",
+            "type":"phpinfo",
+            "path":"/aaa.php",
+            "text":"phpinfo()"
+        },
+        {
+            "id":"19",
+            "type":"phpinfo",
+            "path":"/1.php",
+            "text":"phpinfo()"
+        },
+        {
+            "id":"20",
+            "type":"deploy.sh",
+            "path":"/mkt-web/deploy.sh",
+            "text":"#!/bin/bash"
+        },
+        {
+            "id":"21",
+            "type":"elasticsearch",
+            "path":":9200/_cat/indices",
+            "text":"_river"
+        },
+        {
+            "id":"22",
+            "type":"elasticsearch",
+            "path":":9200/_river/_search",
+            "text":"_river"                  
+        },
         {
             "id":"23",
             "type":"mongodb",
@@ -160,67 +160,67 @@
             "id":"27",
             "type":"hadoop",
             "path":"/dfshealth.html",
-            "text":"Datanode Information"	
+            "text":"Datanode Information"   
         },
         {
             "id":"28",
             "type":"hadoop",
             "path":"/conf",
-            "text":"<property>"	
+            "text":"<property>" 
         },
         {
             "id":"29",
             "type":"webserver",
             "path":"/",
-            "text":"<title>Index of /</title>"	
+            "text":"<title>Index of /</title>"  
         },
         {
             "id":"30",
             "type":"webserver",
             "path":"/",
-            "text":"<title>Directory Listing For /</title>"	
+            "text":"<title>Directory Listing For /</title>" 
         },
         {
             "id":"31",
             "type":"webserver",
             "path":"/",
-            "text":"BDUSS"	
+            "text":"BDUSS"  
         },
         {
             "id":"32",
             "type":"xss",
             "path":"/'><img scr=x onerror=alert(/a/)>",
-            "text":"<img scr=x onerror=alert(/a/)>"	
+            "text":"<img scr=x onerror=alert(/a/)>" 
         },
         {
             "id":"33",
             "type":"solr",
             "path":":8983/solr/#/",
-            "text":"Solr Admin"	
+            "text":"Solr Admin" 
         },       
         {
             "id":"34",
             "type":"solr",
             "path":":8983/",
-            "text":"Solr Admin"	
+            "text":"Solr Admin" 
         },
         {
             "id":"35",
             "type":"hadoop",
             "path":"/dfshealth.html",
-            "text":"hadoop"	
+            "text":"hadoop" 
         },
         {
             "id":"36",
             "type":"hadoop",
             "path":":50070/dfshealth.html",
-            "text":"hadoop"	
+            "text":"hadoop" 
         },
         {
             "id":"37",
             "type":"hadoop",
             "path":":50070/dfshealth.jsp",
-            "text":"hadoop"	
+            "text":"hadoop" 
         }
                 ]
 }
