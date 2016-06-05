@@ -58,7 +58,7 @@ class Burst(threading.Thread):
                 a = open(database)
                 s = json.load(a)['json']
             except:
-                print 'Open datavase.json error'
+                print 'Open database.json error'
             for i in xrange(0,int(len(s))):
                 mold = s[i]["type"]
                 self._make_result_dic(mold)
