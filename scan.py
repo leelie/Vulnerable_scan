@@ -13,7 +13,7 @@ from optparse import OptionParser
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-database = 'database.json'
+json_database = 'database.json'
 timeout = 3
 allow_redirects = True
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20'}
@@ -52,35 +52,30 @@ class Burst(threading.Thread):
         result_dic.setdefault(mold, a)
         return result_dic
 
-    def run(self):
+    def run(self, s):
         while self.domain.qsize() > 0:
-            try:
-                a = open(database)
-                s = json.load(a)['json']
-            except:
-                print 'Open database.json error'
             for i in xrange(0,int(len(s))):
-                mold = s[i]["type"]
+                mold = database[i]["type"]
                 self._make_result_dic(mold)
             host = self.domain.get(block=False)
             self.domain.task_done()
             if rules == "all":
-                for i in xrange(0,int(len(s))):
-                    mold = s[i]["type"]
-                    path = s[i]["path"]
-                    text = s[i]["text"]
+                for i in xrange(0,int(len(database))):
+                    mold = database[i]["type"]
+                    path = database[i]["path"]
+                    text = database[i]["text"]
                     msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                     sys.stdout.write(msg)
                     sys.stdout.flush()
                     url ="http://" +  host + path
                     self._burst_start(url, text, mold, result_dic)
             else:
-                for i in xrange(0,int(len(s))):
-                    mold = s[i]["type"]
+                for i in xrange(0,int(len(database))):
+                    mold = database[i]["type"]
                     for rule_num in range(0,len(rules.split(','))):
                         if mold == rules.split(',')[rule_num]:
-                            path = s[i]["path"]
-                            text = s[i]["text"]
+                            path = database[i]["path"]
+                            text = database[i]["text"]
                             msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                             sys.stdout.write(msg)
                             sys.stdout.flush()
@@ -122,17 +117,21 @@ if __name__ == '__main__':
     (options, args) = parser.parse_args()
     rules = options.rules
     result_dic = {}
-    start_time = time.time()    
+    start_time = time.time() 
+    try:
+        a = open(json_database)
+        database = json.load(a)['json']  
+    except:
+        print 'open database.json error'
     if options.target_file is not None:
         f = open(options.target_file)
         for h in f.readlines():
             domain.put(h.strip())
         f.close()
         url_length =  int(domain.qsize())
-        
         for i in xrange (options.thread_num):
             t = Burst(domain)
-            t.start()
+            t.run(database)
         domain.join()
         save_result(result_dic, rules)
     else:
@@ -140,6 +139,6 @@ if __name__ == '__main__':
             print args[0]
             url_length = 1
             t = Burst(domain.put(args[0]))
-            t.start()
+            t.run(database)
         except:
             parser.print_help()
