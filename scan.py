@@ -9,10 +9,11 @@ import time
 import threading
 import Queue
 import sys
+import warnings
 from optparse import OptionParser
-reload(sys)
-sys.setdefaultencoding('utf8')
 
+
+warnings.filterwarnings("ignore")
 json_database = 'database.json'
 timeout = 3
 allow_redirects = True
