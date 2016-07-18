@@ -221,6 +221,12 @@
             "type":"hadoop",
             "path":":50070/dfshealth.jsp",
             "text":"hadoop" 
+        },
+        {
+            "id":"38",
+            "type":"index",
+            "path":":/index.php",
+            "text":"<?php"
         }
                 ]
 }
