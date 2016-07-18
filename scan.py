@@ -72,8 +72,11 @@ class Burst(threading.Thread):
                     msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                     sys.stdout.write(msg)
                     sys.stdout.flush()
-                    url ="http://" +  host + path
-                    self._burst_start(url, text, mold, result_dic)
+                    if url.startswith('http://'):
+                        self._burst_start(url, text, mold, result_dic)
+                    else:
+                        url ="http://" +  host + path
+                        self._burst_start(url, text, mold, result_dic)
             else:
                 for i in xrange(0,int(len(s))):
                     mold = s[i]["type"]
@@ -84,8 +87,11 @@ class Burst(threading.Thread):
                             msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                             sys.stdout.write(msg)
                             sys.stdout.flush()
-                            url ="http://" +  host + path 
-                            self._burst_start(url, text, mold, result_dic)
+                            if url.startswith('http://'):
+                                self._burst_start(url, text, mold, result_dic)
+                            else:
+                                url ="http://" +  host + path
+                                self._burst_start(url, text, mold, result_dic)
         return result_dic
 
 
