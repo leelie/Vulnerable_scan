@@ -29,7 +29,8 @@ class Burst(threading.Thread):
         try:
             r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=allow_redirects, verify=False)
             if r.status_code == requests.codes.ok:
-                if text in r.content:
+                r.encoding = 'utf-8'
+                if text in r.text:
                     print url
                     self._deal_result(url, result_dic, mold)
                 else:
@@ -72,7 +73,8 @@ class Burst(threading.Thread):
                     msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                     sys.stdout.write(msg)
                     sys.stdout.flush()
-                    if url.startswith('http://'):
+                    if host.startswith('http://'):
+                        url = host + path
                         self._burst_start(url, text, mold, result_dic)
                     else:
                         url ="http://" +  host + path
@@ -87,7 +89,8 @@ class Burst(threading.Thread):
                             msg =  "scanned in %.2f seconds\r"%(time.time()- start_time)
                             sys.stdout.write(msg)
                             sys.stdout.flush()
-                            if url.startswith('http://'):
+                            if host.startswith('http://'):
+                                url = host + path
                                 self._burst_start(url, text, mold, result_dic)
                             else:
                                 url ="http://" +  host + path
